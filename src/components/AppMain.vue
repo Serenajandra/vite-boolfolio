@@ -28,14 +28,9 @@ export default {
     <div class="">
         <h2 class="text-center">Lista dei progetti</h2>
         <div class="row">
-            <div class="col-10 card m-4" v-for="project in projects" :key="project.id">
-                <div class="card-body">
-                    <h3 class="card-title text-center">{{project.title}}</h3>
-                    <p class="card-text">{{project.presentation}}</p>
-                    <a class="btn btn-primary"    href="{{}}">dettagli</a>
-                </div>
-                <!-- <ProjectCard /> -->
-            </div>
+          <div class="col-10 m-4" v-for="project in projects" :key="project.id">
+            <ProjectCard :project="project"/>
+          </div>
         </div>
     </div>
 
