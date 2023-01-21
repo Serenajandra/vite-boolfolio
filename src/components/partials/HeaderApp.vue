@@ -16,7 +16,7 @@ export default {
                 </button>
             </div>
             <div>
-                <a href="http://127.0.0.1:8000/admin">Area di amministrazione</a>
+                <a href="http://127.0.0.1:8000/admin">Login</a>
             </div>
         </nav>
     </header>
