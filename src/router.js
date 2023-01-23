@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomePage from "./pages/HomePage.vue";
 import AboutMe from "./pages/AboutMe.vue";
-import ProjectList from "./pages/ProjectList.vue";
+import ProjectsList from "./pages/ProjectsList.vue";
+import SingleProject from "./pages/SingleProject.vue";
 import NotFound from "./pages/NotFound.vue";
 const router = createRouter({
     history: createWebHistory(),
@@ -17,9 +18,14 @@ const router = createRouter({
             component: AboutMe,
         },
         {
-            path: "/project-list",
-            name: "projectList",
-            component: ProjectList
+            path: "/projects-list",
+            name: "projectsList",
+            component: ProjectsList
+        },
+        {
+            path: "/projects-list/:slug",
+            name: "single-project",
+            component: SingleProject
         },
         {
             path: "/boolean",

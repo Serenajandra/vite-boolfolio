@@ -13,7 +13,7 @@ export default {
             navigation: [
                 {
                     label: 'Vai alla lista dei progetti',
-                    routeName: 'projectList',
+                    routeName: 'projectsList',
                     color: 'btn-success'
                 },
                 {
